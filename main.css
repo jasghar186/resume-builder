@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro:wght@400&display=swap");
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 100%;
+  background-color: #e6e7e8;
+  margin: 2em 0;
+  position: relative;
+}
+
+.add_add_skill,
+.done {
+  display: none;
+}
+
+#download {
+  padding: 2em;
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  height: auto;
+}
+
+.applicant_name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Poppins, sans-serif;
+}
+
+.contact_wrapper div {
+  margin: 0.4em 0;
+}
+
+.contact_wrapper img {
+  width: 11px;
+  height: 11px;
+}
+
+.contact_wrapper div p {
+  cursor: pointer;
+  display: inline;
+  font: 0.7rem Poppins, sans-serif;
+}
+
+.contact_wrapper .contact_right_wrapper div:last-child {
+  color: blue;
+}
+
+.contact_wrapper div span {
+  font-size: 0.9rem;
+}
+
+.sub_title {
+  font-size: 1.5rem;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+}
+
+.summary_wrapper,
+.experience_Wrapper,
+.education_wrapper,
+.skills_Wrapper {
+  margin: 1em 0;
+}
+
+.summary_wrapper p {
+  font: 0.8rem Source Sans Pro, sans-serif;
+}
+
+.experience_Wrapper ul .title {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.experience_Wrapper ul .company {
+  font-size: 0.93rem;
+  margin: 0.2em 0 0 0;
+  font-weight: normal;
+}
+
+.experience_Wrapper ul .date {
+  font-size: 0.1rem;
+}
+
+.skills_Wrapper .last_list li {
+  display: inline-block;
+  margin: 0 0 0 2em;
+  position: relative;
+}
+
+.skills_Wrapper .last_list li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  background-color: #010101c7;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+}
+
+.form_Wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  background-color: #393d3f !important;
+  width: 250px;
+  height: auto;
+  padding: 10em 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+}
+
+.form_Wrapper .first_input input {
+  margin: 0.4em 0 !important;
+}
+
+.form_Wrapper .set_name h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin: 0.7em 0;
+  font-size: 1.5rem;
+}
+
+.form_Wrapper .set_name input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  margin: 0.4em 0;
+  display: block;
+  margin: auto;
+}
+
+.form_Wrapper .set_name textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 1em;
+}
+
+.form_Wrapper .next_Wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form_Wrapper .next_Wrapper button {
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.096em;
+  margin: 0 .1em;
+  background-color: #62929e;
+  color: white;
+  border: none;
+  transform: translate(0, 25px);
+  -webkit-transform: translate(0, 25px);
+  -moz-transform: translate(0, 25px);
+  -ms-transform: translate(0, 25px);
+  -o-transform: translate(0, 25px);
+}
+/*# sourceMappingURL=main.css.map */

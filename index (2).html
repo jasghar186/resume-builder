@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Resume Builder</title>
+</head>
+
+<body id="body">
+
+
+    <!-- information form section -->
+    <div class="form_Wrapper" >
+        <div class="set_name">
+            <h1 class="main_title">enter your name</h1>
+            <div class="first_input">
+             
+            </div>
+            
+            <div class="next_Wrapper">
+                <button class="add_add_skill">add</button>
+                <button class="next">next</button>
+                <button class="done">done</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <div id="download" >
+
+        <h1 class="applicant_name ">
+            junaid Asghar
+        </h1>
+        <div class="contact_wrapper">
+            <div class="contact_left_Wrapper">
+                <div class="mail_wrapper">
+                    <img src="envelope.jpeg" alt="">
+                    <p class="my_mail">jasghar186@gmail.com</p>
+                </div>
+                <div class="linkedin_wrapper">
+                 <img src="linkedin-logo.jpeg" alt="">
+                    <p class="my_linkedin">https://www.linkedin.com</p>
+                </div>
+            </div>
+            <div class="contact_right_wrapper">
+                <div class="phone_wrapper">
+                    <img src="phone-call.jpeg" alt="">
+                    <p class="my_phone">+92324-7380834</p>
+                </div>
+                <div class="website_wrapper">
+                  <img src="link.jpeg" alt="">
+                    <p class="my_website">website.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- summary section -->
+        <div class="summary_wrapper">
+            <h1 class="sub_title sum">
+               professional Summary
+            </h1>
+            <p class="my_summary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita harum provident fugiat tempore perspiciatis, voluptates, sit nulla eum, labore maiores porro consectetur repellendus necessitatibus omnis dolorum vitae doloribus maxime corrupti.
+            </p>
+        </div>
+
+        <!-- experience wrapper -->
+        <div class="experience_Wrapper">
+            <h1 class="sub_title">
+                Experience
+            </h1>
+            <ul>
+                <li class="title jobt">Fiverr</li>
+             <li class="company">Website Developer</li>
+              
+                <li class="ftf">
+                    2019 to present
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- education wrapper -->
+        <div class="education_wrapper">
+            <h1 class="sub_title institute_name">
+                Harvard University
+            </h1>
+            <ul class="edu_wrapper">
+                <li class="course_name">Computer Science</li>
+                <li class="course_date">2019 to 2021</li>
+            </ul>
+        </div>
+
+        <!-- skills wrapper -->
+        <div class="skills_Wrapper">
+            <h1 class="sub_title">
+                skills
+            </h1>
+            <ul class="last_list">
+              
+            </ul>
+        </div>
+    </div>
+
+    <button id="btnn" style="display: block; margin: auto;">
+        Save Resume
+    </button>
+
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js" integrity="sha512-UNbeFrHORGTzMn3HTt00fvdojBYHLPxJbLChmtoyDwB6P9hX5mah3kMKm0HHNx/EvSPJt14b+SlD8xhuZ4w9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var x = $("#btnn");
+        $(x).click(function() {
+            // $("body").css("margin","50px 10px")
+            domtoimage.toBlob(document.getElementById('body'))
+                .then(function(blob) {
+                    window.saveAs(blob, 'resume.png');
+                });
+        })
+    </script>
+</body>
+
+</html>

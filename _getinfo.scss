@@ -1,0 +1,83 @@
+@mixin translate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+@mixin othertranslate {
+    transform: translate(0, 25px);
+    -webkit-transform: translate(0, 25px);
+    -moz-transform: translate(0, 25px);
+    -ms-transform: translate(0, 25px);
+    -o-transform: translate(0, 25px);
+}
+
+.form_Wrapper {
+    @include translate;
+    background-color: #393d3f !important;
+    width: 250px;
+    height: auto;
+    padding: 10em 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    .first_input input {
+        margin: 0.4em 0 !important;
+    }
+    .set_name {
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            margin: 0.7em 0;
+            font-size: 1.5rem;
+        }
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0.7em;
+            margin: 0.4em 0;
+            display: block;
+            margin: auto;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            border: none;
+            outline: none;
+            resize: none;
+            padding: 1em;
+        }
+    }
+    .next_Wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        button {
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.096em;
+margin: 0 .1em;
+            background-color: #62929e;
+            color: white;
+            border: none;
+
+            @include othertranslate();
+        }
+    }
+}

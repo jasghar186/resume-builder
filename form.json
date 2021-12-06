@@ -1,0 +1,29 @@
+
+[
+    {
+        "title" : "enter your name" ,
+        "fields" : " <input placeholder='Enter name' type='text' data-target='.applicant_name' class='name_field'>"
+    },
+    {
+        "title" : "enter contact info" ,
+        "fields" : "<input type='email' placeholder = 'Enter mail' class='name_field' data-target='.my_mail'> <input type='text' placeholder = 'Enter linkedin' data-target='.my_linkedin' class='name_field'> <input type='tel' placeholder = 'Enter phone' data-target='.my_phone' class='name_field'> <input type='text' placeholder = 'Enter website' data-target='.my_website' class='name_field'>  "
+    },
+    {
+        "title" : "enter summary" ,
+        "fields" : "<textarea data-target='.my_summary' class='name_field'></textarea>"
+
+    }, 
+    {
+        "title" : "enter experience"  ,
+        "fields" : "<input type='text' placeholder='company' data-target='.jobt' class='name_field'> <input type='text' placeholder='job' class='name_field' data-target='.company'> <input type='text' placeholder='2001 to present' data-target='.ftf' class='name_field'>"
+    },
+    {
+        "title" : "enter education" ,
+        "fields" : "<input type='text' class='name_field' data-target= '.institute_name' placeholder='Institute Name'> <input type='text' placeholder='course name' class='name_field' data-target='.course_name'> <input type='text' placeholder='date' class='name_field' data-target='.course_date'>"
+    },
+    {
+        "title" : "enter skills" ,
+        "add btn": "<button class='skill_add_btn'>Add skill</button>" ,
+        "fields" : "<input type='text' class='name_field' data-target= '.last_list' placeholder='Add Skills' >" 
+    }
+]
